@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="PC assembling">
+    <meta name="keywords" content="one, two, etc">
+    <meta name="author" content="Nikita Ignatev">
+    <link rel="icon" href="favicon.ico" type="image">
+    <title>Добавление сборки</title>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="description.html">Описание сборок</a>
+        <a href="order_page.html" target="_blank">Контакты и заказ</a>
+        <a href="registration.html">Регистрация</a>
+        <a href="add_pc.html">Добавление сборки</a>
+    </nav>
+</header>
+<article>
+    <h4>Ниже находится форма для добавление запроса на сборку интересующую Вас</h4>
+</article>
+<form action="#" method="post" enctype="multipart/form-data">
+    <div>
+        <fieldset>
+            <legend>Наименование платформы</legend>
+            <div>
+                <label for="processor">Производитель процессора</label>
+                <select id="processor" name="processor">
+                    <option value="intel">Процессоры Intel</option>
+                    <option value="amd">Процессоры AMD</option>
+                </select>
+            </div>
+            <div>
+                <label for="socket">Сокет процессора</label>
+                <select id="socket" name="socket">
+                    <optgroup label="AMD">
+                        <option value="am3">AM3</option>
+                        <option value="am3+">AM3+</option>
+                        <option value="am4">AM4</option>
+                    </optgroup>
+                    <optgroup label="Intel">
+                        <option value="2011">2011v1</option>
+                        <option value="2011v3">2011v3</option>
+                        <option value="1150">1150v1</option>
+                        <option value="1150v2">1150v2</option>
+                        <option value="1200">1200</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="chipset">Чипсет платформы</label>
+                <select id="chipset" name="chipset">
+                    <optgroup label="AMD">
+                        <option value="x370">x370</option>
+                        <option value="x470">x470</option>
+                        <option value="x499">x499</option>
+                        <option value="x599">x599</option>
+                    </optgroup>
+                    <optgroup label="Intel">
+                        <option value="x79">x79</option>
+                        <option value="x99">x99</option>
+                        <option value="x370">x370</option>
+                        <option value="x470">x470</option>
+                    </optgroup>
+                </select>
+            </div>
+        </fieldset>
+    </div>
+    <div>
+        <fieldset>
+            <legend>Оперативная память</legend>
+            <div>
+                <label for="ddr">Тип памяти</label>
+                <select id="ddr" name="ddr">
+                    <optgroup label="DDR3">
+                        <option value="ddr3-1333">DDR3-1333</option>
+                        <option value="ddr3-1600">DDR3-1600</option>
+                        <option value="ddr3-1866">DDR3-1866</option>
+                    </optgroup>
+                    <optgroup label="DDR4">
+                        <option value="ddr4-2100">DDR4-2100</option>
+                        <option value="ddr4-2400">DDR4-2400</option>
+                        <option value="ddr4-2666">DDR4-2666</option>
+                        <option value="ddr4-2866">DDR4-2866</option>
+                        <option value="ddr4-3000">DDR4-3000 XMP Profile</option>
+                    </optgroup>
+                </select>
+            </div>
+        </fieldset>
+    </div>
+    <div>
+        <fieldset>
+            <legend>Видеокарта</legend>
+            <div>
+                <label for="video">Производитель видеокарты</label>
+                <select id="video" name="video">
+                    <optgroup label="Nvidia">
+                        <option value="1050ti">GTX 1050ti</option>
+                        <option value="1063">GTX 1060 3G</option>
+                        <option value="1066">GTX1060 6G</option>
+                        <option value="1070">GTX 1070</option>
+                        <option value="1070ti">GTX 1070ti</option>
+                        <option value="1080ti">GTX 1080ti</option>
+                        <option value="2060">RTX 2060</option>
+                        <option value="2070">RTX 2070</option>
+                    </optgroup>
+                    <optgroup label="AMD">
+                        <option value="vega64">RX VEGA 64</option>
+                        <option value="rx570">RX 570</option>
+                        <option value="rx580">RX 580</option>
+                        <option value="rx590">RX 590</option>
+                    </optgroup>
+                </select>
+            </div>
+        </fieldset>
+    </div>
+    <fieldset>
+        <legend>Добавьте фотографии для загрузки</legend>
+        <p>Можно добавить несколько фотографий</p>
+        <div>
+            <label for="images">Фото комплектующих для сборки</label>
+            <input name="images[]" id="images" type="file" multiple accept="image/*">
+        </div>
+    </fieldset>
+    <div>
+        <fieldset>
+            <legend>Дополнительная информация для сборки</legend>
+            <label for="information"></label>
+            <div>
+                <textarea id="information" name="info" cols="70" rows="5" wrap="hard"></textarea>
+            </div>
+        </fieldset>
+    </div>
+    <div>
+        <label for="useremail">E-mail</label>
+        <input name="useremail" id="useremail" type="email" placeholder="Введите email" required>
+    </div>
+    <div>
+        <button type="submit">Добавить сборку</button>
+        <button type="reset">Сброс</button>
+    </div>
+</form>
+
+</body>
+</html>
