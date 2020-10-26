@@ -1,0 +1,76 @@
+.bg {
+    background-image: url('../img/background2.jpg');
+    background-color: lightslategray;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.text-center {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.list-no-mark {
+    list-style-type: none;
+}
+
+.list-mark {
+    list-style-type: disc;
+}
+
+header {
+    padding-top: 10px;
+    height: 30px;
+    text-align: center;
+    background: gray;
+}
+
+footer {
+    padding-top: 10px;
+    height: 50px;
+    text-align: center;
+    background: gray;
+    color: indigo;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu-color {
+    color: blueviolet;
+}
+
+.text-pad {
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+fieldset {
+    border-radius: 20px;
+    width: 350px;
+    border: 2px solid indigo;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
