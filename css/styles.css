@@ -9,10 +9,31 @@
     text-align: center;
 }
 
+header {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+footer {
+    display: block;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.main-mrg {
+    margin-top: 50px;
+}
+
 img {
     width: 100%;
     height: auto;
     text-align: center;
+    margin-bottom: 55px;
 }
 
 .list-no-mark {
@@ -31,11 +52,14 @@ header {
 }
 
 footer {
-    padding-top: 10px;
     height: 50px;
     text-align: center;
     background: gray;
     color: indigo;
+}
+
+button {
+    border-radius: 20%;
 }
 
 body {
@@ -61,6 +85,34 @@ fieldset {
     border: 2px solid indigo;
 }
 
+.page-up-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    padding: 15px;
+    font-size: 30px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.btn-clr {
+    background: lightgray;
+    color: indigo;
+}
+
+.shadow-form-border fieldset {
+    box-shadow: 0 0 10px blueviolet;
+}
+
+
+.shadow-form-btn {
+    box-shadow: 0 5px 5px blueviolet;
+}
+
+.shadow-txt {
+    text-shadow: 0 5px 5px indigo;
+}
+
 table {
     border-collapse: collapse;
 }
@@ -74,3 +126,8 @@ td {
     padding: 10px;
     text-align: center;
 }
+
+/*
+.main-scroll {
+    overflow-y: scroll;
+}*/

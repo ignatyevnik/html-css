@@ -19,12 +19,13 @@
         <a href="add_pc.html">Добавление сборки</a>
     </nav>
 </header>
+<main class="main-mrg">
 <article>
-    <h4>Ниже находится форма для добавление запроса на сборку интересующую Вас</h4>
+    <h4>Ниже находится форма для добавление запроса на сборку <span class="shadow-txt">интересующую</span> Вас</h4>
 </article>
 <form action="#" method="post" enctype="multipart/form-data">
     <div>
-        <fieldset>
+        <fieldset class="shadow-form-border">
             <legend>Наименование платформы</legend>
             <div>
                 <label for="processor">Производитель процессора</label>
@@ -67,7 +68,7 @@
                     </optgroup>
                 </select>
             </div>
-        </fieldset>
+        </fieldset class="shadow-form-border">
     </div>
     <div>
         <fieldset>
@@ -92,7 +93,7 @@
         </fieldset>
     </div>
     <div>
-        <fieldset>
+        <fieldset class="shadow-form-border">
             <legend>Видеокарта</legend>
             <div>
                 <label for="video">Производитель видеокарты</label>
@@ -117,7 +118,7 @@
             </div>
         </fieldset>
     </div>
-    <fieldset>
+    <fieldset class="shadow-form-border">
         <legend>Добавьте фотографии для загрузки</legend>
         <p>Можно добавить несколько фотографий</p>
         <div>
@@ -126,7 +127,7 @@
         </div>
     </fieldset>
     <div>
-        <fieldset>
+        <fieldset class="shadow-form-border">
             <legend>Дополнительная информация для сборки</legend>
             <label for="information"></label>
             <div>
@@ -139,10 +140,11 @@
         <input name="useremail" id="useremail" type="email" placeholder="Введите email" required>
     </div>
     <div>
-        <button type="submit">Добавить сборку</button>
-        <button type="reset">Сброс</button>
+        <button type="submit" class="shadow-form-btn">Добавить сборку</button>
+        <button type="reset" class="shadow-form-btn">Сброс</button>
     </div>
 </form>
+</main>
 <footer>
     <pre>СП-б 2020</pre>
 </footer>
