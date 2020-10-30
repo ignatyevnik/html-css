@@ -105,6 +105,9 @@ fieldset {
     box-shadow: 0 0 10px blueviolet;
 }
 
+.btn-shift {
+    left: auto;
+}
 
 .shadow-form-btn {
     box-shadow: 0 5px 5px blueviolet;
@@ -128,7 +131,53 @@ td {
     text-align: center;
 }
 
-/*
-.main-scroll {
-    overflow-y: scroll;
-}*/
+.modalbackground {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    display: none;
+}
+
+.modalbackground:target {
+    opacity: 1;
+}
+
+.modal-login {
+    width: 100%;
+    max-width: 300px;
+    margin: 10% auto;
+    padding: 2%;
+    background: gray;
+    border-radius: 3px;
+}
+
+.modal-login .btn-close {
+    display: block;
+    color: red;
+    background: blue;
+    padding: 2%;
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.modal-login .btn-close:hover {
+    background: indigo;
+}
+
+.btn-close:target {
+    display: none;
+}
+
+#login-form:target {
+    display: block;
+}
+

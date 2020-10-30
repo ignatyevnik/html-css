@@ -17,10 +17,11 @@
         <a href="order_page.html" target="_blank">Контакты и заказ</a>
         <a href="registration.html">Регистрация</a>
         <a href="add_pc.html">Добавление сборки</a>
+        <a href="#login-form">Войти</a>
     </nav>
 </header>
 <main class="main-mrg">
-    <form action="#" method="post" class="shadow-form-border text-center">
+    <form action="#" method="post" class="shadow-form-border">
         <div>
             <fieldset>
                 <legend>Основная информация</legend>
@@ -70,11 +71,24 @@
             </fieldset>
         </div>
         <div>
-            <button class="shadow-form-btn" type="submit">Зарегистрироваться</button>
-            <button class="shadow-form-btn" type="reset">Отменить</button>
+            <button class="shadow-form-btn btn-shift" type="submit">Зарегистрироваться</button>
+            <button class="shadow-form-btn btn-shift" type="reset">Отменить</button>
         </div>
     </form>
 </main>
+<div class="modalbackground" id="login-form">
+    <form action="#" class="modal-login">
+        <h2>Войти</h2>
+        <label for="e-mail">Почта</label>
+        <input id="e-mail" type="email" placeholder="Введите почту" name="email" required>
+        <br>
+        <label for="psw">Пароль</label>
+        <input id="psw" type="password" placeholder="Введите пароль" name="password" required>
+        <br>
+        <button type="submit" class="btn">Войти</button>
+        <a href="#" class="btn-close">Закрыть</a>
+    </form>
+</div>
 
 <footer>
     <pre>СП-б 2020</pre>
